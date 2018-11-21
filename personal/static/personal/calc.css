@@ -1,19 +1,7 @@
 body{
-	background-color: OliveDrab
-}
-img{
-	height: 300px
-}
-#the-image{
+	background-color: OliveDrab;
 	text-align: center;
 }
-h1{
-	text-align: center;
-}
-p{
-	text-align: center;
-}
-
 
 input[type="text"]{
 	width: 200px;
