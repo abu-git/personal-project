@@ -8,3 +8,6 @@ class HomePageView(TemplateView):
 
 class CalculatorPageView(TemplateView):
 	template_name = 'calculator.html'
+
+class JSObjectPageView(TemplateView):
+	template_name = 'object.html'
