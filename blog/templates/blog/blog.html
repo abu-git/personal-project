@@ -1,0 +1,28 @@
+{% extends "blog/header.html" %}
+{% block content %}
+{%load staticfiles%}
+			   <link type="text/css" rel="stylesheet" href="{%static 'static/blog/home.css' %}">
+
+	{% for post in object_list %}
+		
+		<html>
+			<head>
+		        <title>Blog</title>
+			</head>
+			<body>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-8 offset-2">
+							<div class="card">
+								<h5>{{ post.date|date:"Y-m-d" }}<a href="/blog/{{post.id}}">{{ post.title }}</a></h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</body>
+		<html>
+	{% endfor %}
+
+{% endblock %}
+
+
